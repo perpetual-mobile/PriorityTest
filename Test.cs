@@ -9,10 +9,10 @@ namespace PriorityTest
 
         public void Run()
         {
-            Thread lowestThread = new Thread(new ThreadStart(Low));
+            var lowestThread = new Thread(Low);
             lowestThread.Priority = ThreadPriority.Lowest;
 
-            Thread highestThread = new Thread(new ThreadStart(High));
+            var highestThread = new Thread(High);
             highestThread.Priority = ThreadPriority.Highest;
 
             lowestThread.Start();
