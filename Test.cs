@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ProrityTest
+namespace PriorityTest
 {
     public class Test
     {
@@ -23,10 +23,10 @@ namespace ProrityTest
 
         public void Low()
         {
-            Console.WriteLine("Low priority task executed");
+            System.Console.WriteLine("Low priority task executed");
 
             lock (resourselock) {
-                Console.WriteLine("Low priority task will never release the lock!");
+                System.Console.WriteLine("Low priority task will never release the lock!");
 
                 while (true)
                     ; //infinite empty statement!
