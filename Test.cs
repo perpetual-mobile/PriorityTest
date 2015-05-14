@@ -5,41 +5,39 @@ namespace PriorityTest
 {
     public class Test
     {
-        object resourselock = new object();
+        static int count = 0;
 
         public void Run()
         {
             var lowestThread = new Thread(Low);
             lowestThread.Priority = ThreadPriority.Lowest;
-
-            var highestThread = new Thread(High);
-            highestThread.Priority = ThreadPriority.Highest;
-
             lowestThread.Start();
             Thread.Sleep(1000);   //makes sure that the lowest priority thread starts first
-            highestThread.Start();
+
+            for (int i = 0; i < 20; i++) {
+                var highestThread = new Thread(Normal);
+                highestThread.Start();
+            }
         }
 
 
         public void Low()
         {
-            System.Console.WriteLine("Low priority task executed");
+            System.Console.WriteLine("Low priority task started");
 
-            lock (resourselock) {
-                System.Console.WriteLine("Low priority task will never release the lock!");
-
-                while (true)
-                    ; //infinite empty statement!
+            while (true) {
+                Thread.Sleep(1000);
+                System.Console.WriteLine("low prio task can still process stuff " + count);
             }
         }
 
-        public void High()
+        public void Normal()
         {
-            System.Console.WriteLine("High priority task executed");
+            System.Console.WriteLine("normal priority task started");
 
-            lock (resourselock) {
-                System.Console.WriteLine("High priority task got the lock!"); //this will never be reached!
-            }
+            while (true)
+                count++;
+
         }
     }
 }

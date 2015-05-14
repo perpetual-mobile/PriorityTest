@@ -20,6 +20,7 @@ namespace PriorityTest
                     }
                 }
             };
+            new Test().Run();
         }
 
         protected override void OnStart()
