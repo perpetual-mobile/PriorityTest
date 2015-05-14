@@ -1,0 +1,14 @@
+*.userprefs
+
+#build folders
+[Bb]in/
+[Oo]bj/
+
+# nunit packages
+packages/
+
+#tmp files
+.DS_Store
+
+#generated files
+Resource.designer.cs
