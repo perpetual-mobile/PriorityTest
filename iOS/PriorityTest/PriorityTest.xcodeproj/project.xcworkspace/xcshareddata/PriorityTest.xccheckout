@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9905E48F-AAA7-49BF-8227-6AA3042FB8B9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PriorityTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AD0DA8E22D08F8A0A7298CB98FF73E1FB96D4337</key>
+		<string>https://github.com/perpetual-mobile/PriorityTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/PriorityTest/PriorityTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AD0DA8E22D08F8A0A7298CB98FF73E1FB96D4337</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/perpetual-mobile/PriorityTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AD0DA8E22D08F8A0A7298CB98FF73E1FB96D4337</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AD0DA8E22D08F8A0A7298CB98FF73E1FB96D4337</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PriorityTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
